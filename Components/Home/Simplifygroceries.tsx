@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react';
-import simplifyimg from '../../public/assets/Simplifyimg.png';
+// import simplifyimg from '../../public/assets/Simplifyimg.png';
 import googleplay from '../../public/assets/googleplay.png'
 import appstore from '../../public/assets/appstore.png'
 
@@ -14,10 +14,10 @@ const Simplifygroceries = () => {
            <Image src={appstore} alt='appstore' className='cursor-pointer '/>
            </div>
         </div>
-        <div className='w-[50%] flex justify-end '>
+        {/* <div className='w-[50%] flex justify-end '>
                 <Image src={simplifyimg} alt='' className=''/>
         </div>
-      
+       */}
     </div>
   )
 }
