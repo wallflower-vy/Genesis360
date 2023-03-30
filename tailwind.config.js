@@ -19,7 +19,12 @@ module.exports = {
       blue: "#003DB5",
       background: "#F3F8FF",
     },
-
+    screens: {
+      sm: '480px', 
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
     fontFamily: {
       plus: ["Plus Jakarta", "sans-serif"],
     },
