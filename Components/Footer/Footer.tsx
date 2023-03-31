@@ -7,10 +7,10 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="bg-green flex px-[8rem] py-[5rem] gap-10 max-xl:px-[5rem] max-xl:py-0 max-lg:gap-0 max-lg:px-2 max-lg:py-5  max-lg:flex-col">
+    <div className="bg-green flex px-[8rem] py-[5rem] gap-10 max-xl:px-[5rem] max-xl:py-4 max-lg:gap-0 max-lg:px-4 max-lg:py-5  max-lg:flex-col">
       <div className="w-[20%] flex flex-col justify-between max-lg:w-[100%] ">
         <div>
-          <Image src={Genesis360green} alt="logo" className=" w-[150px] h-[28px]" />
+          <Image src={Genesis360green} alt="logo" className=" max-lg:w-[150px] max-lg:h-[28px]" />
         </div>
 
         <div className="flex gap-3 max-lg:hidden ">
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 border border-lightgreen w-full  max-lg:hidden">
-          <div className=" text-2xl font-[500]">
+          <div className=" text-2xl font-[500] flex">
             <input
               type="text"
               placeholder="Email Address"
