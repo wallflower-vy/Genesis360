@@ -8,7 +8,7 @@ import appstore2 from "../../public/assets/image 8.png";
 
 const Banner = () => {
   return (
-    <div className=" w-full flex justify-between px-[8rem] pt-[5rem] pb-[5rem] bg-background max-lg:px-4 max-lg:pt-0 max-lg:pb-0 max-lg:flex-col-reverse">
+    <div className=" w-full flex justify-between px-[8rem] pt-[5rem] pb-[5rem] bg-background max-xl:px-4 max-lg:pt-0 max-lg:pb-0 max-lg:flex-col-reverse">
 
       {/* Hero text */}
       <div className="w-[50%] max-xl:w-[100%] ">

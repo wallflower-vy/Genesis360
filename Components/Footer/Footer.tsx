@@ -7,7 +7,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="bg-green flex px-[8rem] py-[5rem] gap-10 max-xl:px-[5rem] max-xl:py-4 max-lg:gap-0 max-lg:px-4 max-lg:py-5  max-lg:flex-col">
+    <div className="bg-green flex px-[8rem] py-[5rem] gap-10 max-xl:px-[5rem] max-xl:py-12 max-lg:gap-0 max-lg:px-4 max-lg:py-5  max-lg:flex-col">
       <div className="w-[20%] flex flex-col justify-between max-lg:w-[100%] ">
         <div>
           <Image src={Genesis360green} alt="logo" className=" max-lg:w-[150px] max-lg:h-[28px]" />

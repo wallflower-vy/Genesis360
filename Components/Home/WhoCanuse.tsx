@@ -25,7 +25,7 @@ const whocanusedata = [
 ];
 const WhoCanuse = () => {
   return (
-    <div className="bg-green px-[8rem] py-[2rem] flex gap-16  justify-between max-lg:py-16 max-lg:px-4 max-lg:flex-col">
+    <div className="bg-green px-[8rem] py-[2rem] flex gap-16  justify-between max-lg:py-16 max-xl:px-4 max-lg:flex-col">
 
       <div className="w-[60%] max-lg:w-full">
 
