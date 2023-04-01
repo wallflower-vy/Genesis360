@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Home from "./Home/Home";
-import Business from "./Business/Business";
+import Home from "./Home";
+// import Business from "./Business/Business";
 // import Business from "./Business/Business";
 
 
@@ -21,8 +21,7 @@ export default function Index({  title }: Props) {
         <meta name='description' content='Ecommerce website'></meta>
         <link rel='icon' href='/favicon.png' />
       </Head>
-      <Business />
-      {/* <Home /> */}
+      <Home />
      
       
      
