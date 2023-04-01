@@ -16,6 +16,7 @@ module.exports = {
       aqua: "#B0FFFC",
       lightblue: "#DFE5FF",
       white: "#fff",
+      lime:"#DEEDED",
       brown: "#906D6D",
       blue: "#003DB5",
       background: "#F3F8FF",

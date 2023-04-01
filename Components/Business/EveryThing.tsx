@@ -9,10 +9,10 @@ import cart5 from '../../public/assets/cart5.png'
 const EveryThing = () => {
   return (
     <div className='bg-background px-[8rem] py-[5rem] '>
-     <div className='w-[60%]'>
-     <h1 className='text-5xl text-green font-extrabold leading-[80px]'>Everything You Need For Efficient Food Supply Procurement.</h1>
+     <div className='w-[80%]'>
+     <h1 className='text-6xl text-green font-extrabold leading-[80px]'>Everything You Need For Efficient Food Supply Procurement.</h1>
      </div>
-     <div className='flex gap-8 mt-12'>
+     <div className='flex gap-8 mt-8'>
       <div className='bg-lime p-6  rounded-2xl w-1/2'>
           <Image src={cart1} alt='card'/>
           <h1 className='text-3xl font-extrabold text-green mt-5'>Buy Now, Pay Later</h1>
