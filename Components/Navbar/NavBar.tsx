@@ -6,7 +6,8 @@ import { IoIosArrowDown, IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Dropdown from "./Dropdown";
 
-const NavBar = () => {
+
+const NavBar = ( props) => {
   const [dropdown, setDropdown] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -15,7 +16,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-background h-[9rem]  z-[1000] flex xl:relative justify-between max-lg:fixed top-0 right-0 left-0 w-full  items-center px-[8rem] relative  max-xl:px-[2rem] py-[1rem] max-lg:py-[0rem]  max-lg:h-[7rem]">
+    <div className="bg-background h-[9rem] z-50  flex xl:relative justify-between max-lg:fixed top-0 right-0 left-0 w-full  items-center px-[8rem] relative  max-xl:px-[2rem] py-[1rem] max-lg:py-[0rem]  max-lg:h-[7rem]">
       <div>
         <Link href="/">
           <Image src={logo} alt="logo" className="max-md:w-[180px]" />
@@ -43,7 +44,7 @@ const NavBar = () => {
           {dropdown && <Dropdown />}
         </div>
 
-        <button className="text-[#fff] py-2 px-8 font-bold text-center bg-lightgreen text-[20px] ">
+        <button className="text-[#fff] py-2 px-8 font-bold text-center bg-lightgreen text-[20px]  " onClick={props.show}>
           Get Started
         </button>
       </div>
