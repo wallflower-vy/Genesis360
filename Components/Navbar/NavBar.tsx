@@ -1,44 +1,54 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import logo from '../../public/assets/Genesislogo.png'
-import {IoIosArrowDown, IoMdClose} from 'react-icons/io'
-import {GiHamburgerMenu} from 'react-icons/gi'
-import Dropdown from './Dropdown';
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import logo from "../../public/assets/Genesislogo.png";
+import { IoIosArrowDown, IoMdClose } from "react-icons/io";
+import { RxHamburgerMenu } from "react-icons/rx";
+import Dropdown from "./Dropdown";
 
-const NavBar= () => {
+const NavBar = () => {
   const [dropdown, setDropdown] = useState(false);
-  const[ismobile, setisMobile] =useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobile(!isMobile);
+  };
 
   return (
-    <div className='bg-background h-[9rem] flex md:relative justify-between sm:fixed sm:top-0 sm:right-0 sm:left-0 w-full  sm:z-10 items-center md:px-[8rem] px-[2rem] md:py-[2rem] py-[1rem]'>
-     <div className=''>
-     <Link  href='/'>
-        <Image src={logo}  alt='logo'/>
-      </Link>
-     </div>
-      <div className='md:hidden'>
-        <button onClick={()=>setisMobile(!ismobile)}>
-          {ismobile ?<IoMdClose  className='text-2xl'/>  : <GiHamburgerMenu className='text-2xl'/>}
-        </button>
-
+    <div className="bg-background h-[9rem]  z-[1000] flex xl:relative justify-between max-lg:fixed top-0 right-0 left-0 w-full  items-center px-[8rem] relative  max-xl:px-[2rem] py-[1rem] max-lg:py-[0rem]  max-lg:h-[7rem]">
+      <div>
+        <Link href="/">
+          <Image src={logo} alt="logo" className="max-md:w-[180px]" />
+        </Link>
       </div>
-     
-     <div  className={`md:flex md:flex-row z-50 justify-center items-center md:w-auto md:relative absolute   ${
-          ismobile
-            ? "left-[0px] top-[4.8rem] bg-white  z-40 md:p-10 w-[300px] h-[100vh]  transition-all duration-500 ease-in overflow-y-auto  scrollbar-thumb-white scrollbar-track-white scrollbar-thin pb-28"
-            : " left-[-800px] top-[4.8rem] transition-all duration-500 ease-in md:top-0 md:left-0"
-        }`}>
-        <Link href='#' className='p-4 text-[20px] font-bold text-green'>For Farmers</Link>
-        <Link href='#' className='p-4 text-[20px] font-bold text-green'>For Businesses</Link>
-        <Link href='#'className='p-4 text-[20px] position relative font-bold font-bold text-green'onMouseEnter={() => setDropdown(true)}
-              onMouseLeave={() => setDropdown(false)}>Company <IoIosArrowDown className='inline'/>
-               {dropdown && <Dropdown />} 
-               </Link>
-        <button className='text-[#fff] py-2 px-8 font-bold text-center bg-lightgreen text-[20px]'>Get Started</button>
-     </div>
+      <div className=" max-lg:block hidden">
+        <button onClick={toggleMobileMenu}>
+          {isMobile ? (
+            <IoMdClose className="text-2xl" />
+          ) : (
+            <RxHamburgerMenu className="text-3xl" />
+          )}
+        </button>
+      </div>
+      <div className={`  flex z-50 justify-center items-center relative max-lg:absolute ${ isMobile ? "left-0 top-[7rem] bg-white z-40 w-full  py-6 flex-col  duration-500" : " max-lg:left-[-6000px] " }`}>
+        <Link href="/farmers" className="p-4 text-[20px] font-bold text-green">
+          For Farmers
+        </Link>
+        <Link href="/Business" className="p-4 text-[20px] font-bold text-green">
+          For Businesses
+        </Link>
+
+        <div onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)} className="relative">
+          <button className="p-4 text-[20px] font-bold text-green flex items-center">Company <IoIosArrowDown className="inline" /></button>
+          {dropdown && <Dropdown />}
+        </div>
+
+        <button className="text-[#fff] py-2 px-8 font-bold text-center bg-lightgreen text-[20px] ">
+          Get Started
+        </button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default NavBar;
