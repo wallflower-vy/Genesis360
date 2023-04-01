@@ -35,7 +35,7 @@ const choicedata = [
 
 const Whychoose = () => {
   return (
-    <div className="px-[8rem] py-[6rem] bg-background max-xl:px-4 max-lg:py-10">
+    <div className="px-[8rem] py-[6rem] bg-background max-xl:px-4 max-lg:py-16">
       <div className="">
         <h1 className="text-green text-5xl font-extrabold max-md:text-[40px]">
           Why choose Genesis360?
