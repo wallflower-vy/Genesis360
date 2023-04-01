@@ -5,6 +5,7 @@ import logo from '../../public/assets/Genesislogo.png'
 import {IoIosArrowDown, IoMdClose} from 'react-icons/io'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import Dropdown from './Dropdown';
+import Button from '../Button';
 
 const NavBar= () => {
   const [dropdown, setDropdown] = useState(false);
@@ -29,13 +30,13 @@ const NavBar= () => {
             ? "left-[0px] top-[4.8rem] bg-white  z-40 md:p-10 w-[300px] h-[100vh]  transition-all duration-500 ease-in overflow-y-auto  scrollbar-thumb-white scrollbar-track-white scrollbar-thin pb-28"
             : " left-[-800px] top-[4.8rem] transition-all duration-500 ease-in md:top-0 md:left-0"
         }`}>
-        <Link href='#' className='p-4 text-[20px] font-bold text-green'>For Farmers</Link>
-        <Link href='#' className='p-4 text-[20px] font-bold text-green'>For Businesses</Link>
+        <Link href='/home' className='p-4 text-[20px] font-bold text-green'>For Farmers</Link>
+        <Link href='/business' className='p-4 text-[20px] font-bold text-green'>For Businesses</Link>
         <Link href='#'className='p-4 text-[20px] position relative font-bold font-bold text-green'onMouseEnter={() => setDropdown(true)}
               onMouseLeave={() => setDropdown(false)}>Company <IoIosArrowDown className='inline'/>
                {dropdown && <Dropdown />} 
                </Link>
-        <button className='text-[#fff] py-2 px-8 font-bold text-center bg-lightgreen text-[20px]'>Get Started</button>
+        <Button/>
      </div>
     </div>
   )
