@@ -2,14 +2,14 @@ import Footer from "./Footer/Footer";
 import NavBar from "./Navbar/NavBar";
 import { useState } from "react";
 import React, { ReactNode } from "react";
-import Getstartedmodal from "./UI/Getstartedmodal";
+import Modal from "./UI/Modal";
 
 type layoutprops = {
   children: ReactNode;
 };
 
 const Layout = ({ children }: layoutprops) => {
-  const [modalisshown, showmodal] = useState(false);
+  const [Modalisshown, showmodal] = useState(false);
 
   const showmodalhandler = () => {
     showmodal(true)
@@ -23,7 +23,7 @@ const Layout = ({ children }: layoutprops) => {
     <>
       <div className="">
 
-       {modalisshown && <Getstartedmodal  hide={hidemodalhandler} /> }
+       {Modalisshown && <Modal  hide={hidemodalhandler} /> }
 
         <NavBar show={showmodalhandler}/>
 

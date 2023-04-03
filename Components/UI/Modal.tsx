@@ -38,7 +38,7 @@ const ModalOverlay = (props) => {
   );
 };
 
-const Getstartedmodal = (props) => {
+const Modal = (props) => {
   return (
     <>
       <Backdrop hide={props.hide} />
@@ -47,4 +47,4 @@ const Getstartedmodal = (props) => {
   );
 };
 
-export default Getstartedmodal;
+export default Modal;
