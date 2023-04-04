@@ -21,6 +21,7 @@ export default function Index({  title }: Props) {
         <meta name='description' content='Ecommerce website'></meta>
         <link rel='icon' href='/favicon.png' />
       </Head>
+
       <Home />
      
       

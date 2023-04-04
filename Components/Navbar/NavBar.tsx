@@ -15,7 +15,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-background h-[9rem]  z-[1000] flex xl:relative justify-between max-lg:fixed top-0 right-0 left-0 w-full  items-center px-[8rem] relative  max-xl:px-[2rem] py-[1rem] max-lg:py-[0rem]  max-lg:h-[7rem]">
+    <div className="bg-background h-[9rem]  z-1000 flex xl:relative justify-between max-lg:fixed top-0 right-0 left-0 w-full  items-center px-[8rem] relative  max-xl:px-[2rem] py-[1rem] max-lg:py-[0rem]  max-lg:h-[7rem]">
       <div>
         <Link href="/">
           <Image src={logo} alt="logo" className="max-md:w-[180px]" />
@@ -44,7 +44,7 @@ const NavBar = () => {
         </div>
 
         <button className="text-[#fff] py-2 px-8 font-bold text-center bg-lightgreen text-[20px] ">
-          Get Started
+          <a href="/dashboard">Get Started</a>
         </button>
       </div>
     </div>
