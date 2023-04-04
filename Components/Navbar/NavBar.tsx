@@ -32,7 +32,7 @@ const NavBar = ( props) => {
         </button>
       </div>
       <div className={`  flex z-50 justify-center items-center relative max-lg:absolute ${ isMobile ? "left-0 top-[7rem] bg-white z-40 w-full  py-6 flex-col  duration-500" : " max-lg:left-[-6000px] " }`}>
-        <Link href="/farmers" className="p-4 text-[20px] font-bold text-green">
+        <Link href="/Home" className="p-4 text-[20px] font-bold text-green">
           For Farmers
         </Link>
         <Link href="/Business" className="p-4 text-[20px] font-bold text-green">

@@ -3,6 +3,9 @@ import NavBar from "./Navbar/NavBar";
 import { useState } from "react";
 import React, { ReactNode } from "react";
 import Modal from "./UI/Modal";
+import Home from "@/pages/Home";
+import Business from "@/pages/Business";
+
 
 type layoutprops = {
   children: ReactNode;
@@ -10,6 +13,7 @@ type layoutprops = {
 
 const Layout = ({ children }: layoutprops) => {
   const [Modalisshown, showmodal] = useState(false);
+  const [HeaderIsHidden, setshow] = useState(false)
 
   const showmodalhandler = () => {
     showmodal(true)
@@ -19,16 +23,22 @@ const Layout = ({ children }: layoutprops) => {
     showmodal(false)
   }
 
+  const hideheaderhandler =() => {
+    setshow(false)
+  }
+
   return (
     <>
       <div className="">
 
        {Modalisshown && <Modal  hide={hidemodalhandler} /> }
 
-        <NavBar show={showmodalhandler}/>
+       {HeaderIsHidden && <NavBar show={showmodalhandler}/>}
 
-        {children}
-        <Footer />
+       {children}  
+      
+
+       {HeaderIsHidden && <Footer/>}
       </div>
     </>
   );
