@@ -1,32 +1,33 @@
 import Product from "@/pages/ProductList";
 import Footer from "./Footer/Footer";
 import NavBar from "./Navbar/NavBar";
-
-import React, { ReactNode } from 'react'
-import SearchProResult from "@/pages/SearchProResult";
-import ProductDetails from "./Products/ProductDetails";
-import ProductList from "@/pages/ProductList";
-
-
-
+import { useState } from "react";
+import React, { ReactNode } from "react";
+import Modal from "./UI/Modal";
 
 type layoutprops = {
-  children: ReactNode
-}
+  children: ReactNode;
+};
 
+const Layout = ({ children }: layoutprops) => {
+  const [Modalisshown, showmodal] = useState(false);
 
+  const showmodalhandler = () => {
+    showmodal(true)
+  };
+  
+  const hidemodalhandler = () => {
+    showmodal(false)
+  }
 
-
-
-const Layout = ({children}:layoutprops) => {
   return (
     <>
-      
-      <div className=''>
-       
-        
-        <NavBar />
-       
+      <div className="">
+
+       {Modalisshown && <Modal  hide={hidemodalhandler} /> }
+
+        <NavBar show={showmodalhandler}/>
+
         {children}
         <Footer />
       </div>

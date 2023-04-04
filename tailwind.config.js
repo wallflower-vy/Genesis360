@@ -30,6 +30,7 @@ module.exports = {
     fontFamily: {
       plus: ["Plus Jakarta", "sans-serif"],
     },
+    extend: {},
   },
 
   plugins: [require("tailwindcss"), require("autoprefixer")],
