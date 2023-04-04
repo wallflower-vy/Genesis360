@@ -19,7 +19,6 @@ const Home = () => {
      <Whatpeople />
      <Simplifygroceries />
      
-      
     </div>
   )
 }

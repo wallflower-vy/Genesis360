@@ -8,7 +8,7 @@ import React from 'react'
 const Business = () => {
   return (
     <div>
-      <BusinessHero />
+      <BusinessHero  />
       <EveryThing />
       <HowItWorks />
       <Whatentrepreneur />
