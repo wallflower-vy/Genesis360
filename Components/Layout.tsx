@@ -5,6 +5,10 @@ import React, { ReactNode } from "react";
 import Modal from "./UI/Modal";
 import Home from "@/pages/Home";
 import Business from "@/pages/Business";
+import Login from "./Forms/Login";
+import SignUp from "./Forms/Signup";
+import Forgetpassword from "./Forms/ForgetPassword";
+import Resetpassword from "./Forms/ResetPassword";
 
 
 type layoutprops = {
@@ -23,9 +27,6 @@ const Layout = ({ children }: layoutprops) => {
     showmodal(false)
   }
 
-  const hideheaderhandler =() => {
-    setshow(false)
-  }
 
   return (
     <>
@@ -33,12 +34,15 @@ const Layout = ({ children }: layoutprops) => {
 
        {Modalisshown && <Modal  hide={hidemodalhandler} /> }
 
-       {HeaderIsHidden && <NavBar show={showmodalhandler}/>}
+       <NavBar show={showmodalhandler}/>
 
-       {children}  
-      
+       {/* {children}   */}
+       {/* <Login /> */}
+       {/* <SignUp /> */}
+       {/* <Forgetpassword /> */}
+        <Resetpassword />      
 
-       {HeaderIsHidden && <Footer/>}
+       <Footer/>
       </div>
     </>
   );

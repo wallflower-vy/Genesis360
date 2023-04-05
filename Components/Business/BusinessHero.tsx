@@ -19,11 +19,12 @@ const BusinessHero = () => {
             patrons.
           </p>
           
-          <Link href='/Login'>
+          
             <div className="mt-5">
               <Button />
             </div>         
-          </Link>
+          
+          
         </div>
       </div>
       <div className="w-[40%]">
