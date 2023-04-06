@@ -1,10 +1,23 @@
 import Image from "next/image";
 import React from "react";
 import businesshero from "../../public/assets/businesshero.png";
-import Button from "../Button";
-import Link from "next/link";
+// import { useState } from 'react';
+
+
+import { useRouter } from "next/router";
+// import Layout from "../Layout";
+// import Footer from "../Footer/Footer";
 
 const BusinessHero = () => {
+  const router = useRouter();
+ 
+  const handleClick = () => {
+   
+    router.push('/BusinessLogin');
+    
+    
+  };
+
   return (
     <div className="flex px-[8rem] py-10 bg-background gap-10 justify-between">
       <div className="w-[60%] pt-20">
@@ -19,11 +32,11 @@ const BusinessHero = () => {
             patrons.
           </p>
           
-          <Link href='/Login'>
-            <div className="mt-5">
-              <Button />
-            </div>         
-          </Link>
+          <div className="mt-3">
+          
+         <button className="text-[#fff] py-2 px-8 font-bold text-center bg-lightgreen text-[20px]" onClick={handleClick}>Get Started</button>
+          </div>
+          
         </div>
       </div>
       <div className="w-[40%]">

@@ -6,16 +6,16 @@ import appstore1 from "../../public/assets/image 7.png";
 import appstore2 from "../../public/assets/image 8.png";
 import { RiCloseCircleFill } from "react-icons/ri";
 
-const Backdrop = (props) => {
+const Backdrop = (props:any) => {
   return <div className={classes.backdrop} onClick={props.hide} />;
 };
 
-const ModalOverlay = (props) => {
+const ModalOverlay = (props:any) => {
   return (
     <div className={classes.modal}>
       <div>
         <div className="flex justify-end">
-          <RiCloseCircleFill className="text-4xl text-green" onClick={props.hide}/>
+          <RiCloseCircleFill className="text-4xl cursor-pointer text-green" onClick={props.hide}/>
         </div>
 
         <h2 className=" text-green text-[55px] font-extrabold leading-[69px] max-md:text-[40px] max-md:leading-[50px]">
@@ -38,7 +38,7 @@ const ModalOverlay = (props) => {
   );
 };
 
-const Modal = (props) => {
+const Modal = (props :any) => {
   return (
     <>
       <Backdrop hide={props.hide} />

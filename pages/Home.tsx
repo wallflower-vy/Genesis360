@@ -5,12 +5,14 @@ import Takestress from '@/Components/Home/Takestress'
 import Whatpeople from '@/Components/Home/Whatpeople'
 import WhoCanuse from '@/Components/Home/WhoCanuse'
 import Whychoose from '@/Components/Home/Whychoose'
+import Layout from '@/Components/Layout'
 
 import React from 'react'
 
 const Home = () => {
   return (
-    <div>
+    <Layout linkPath='/farmers'>
+      
      <Banner />
      <Whychoose />
      <WhoCanuse />
@@ -19,8 +21,8 @@ const Home = () => {
      <Whatpeople />
      <Simplifygroceries />
      
-    </div>
+    </Layout>
   )
 }
 
-export default Home
+export default Home;

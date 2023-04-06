@@ -3,6 +3,7 @@ import Image from "next/image";
 import hidePass from "../../public/svg/hidepassword.svg";
 import showPass from "../../public/svg/showpassword.svg";
 import sign from "../../public/assets/Vector (2).png"
+import { useRouter } from "next/router";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -13,9 +14,20 @@ function Login() {
   const togglePasswordVisibility = () => {
     setPasswordVisible((prevState) => !prevState);
   };
+  const router = useRouter();
+ 
+  const handleClick = () => {
+  
+    router.push('/Signup');
+    
+    
+  };
 
+  const handleclik2=()=>{
+    router.push('/ProductList');
+  }
   return (
-    <div className=" bg-gray-100 flex flex-col justify-center  py-[40px]">
+    <div className=" bg-background  flex flex-col justify-center  py-[40px]">
 
       <div className="mx-auto">
         <div className=" px-[70px] py-[50px]  bg-white  w-[600px] max-md:px-0 max-lg:py-0 shadow-[0px_0px_10px_0px_#00000040]">
@@ -97,12 +109,12 @@ function Login() {
               <p className=" text-[#003DB5] text-[20px] font-bold">Reset</p>
             </div>
 
-            <button className="h-[50px] mt-[20px] bg-green w-full font-bold  text-white text-[20px]">Login</button>
+            <button className="h-[50px] mt-[20px] bg-green w-full font-bold  text-white text-[20px]" onClick={handleclik2}>Login</button>
           </form>
 
           <div className="flex mt-[90px] justify-center space-x-2">
             <p className=" text-[20px] text-green font-medium">Don’t have an account?</p>
-            <p className=" text-lightgreen text-[20px] font-extrabold">Sign Up
+            <p className=" text-lightgreen text-[20px] font-extrabold cursor-pointer" onClick={handleClick}>Sign Up
             
             <Image src={sign} alt="logo" className="max-md:w-[180px]" />
             </p>

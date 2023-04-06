@@ -6,43 +6,33 @@ import React, { ReactNode } from "react";
 import Modal from "./UI/Modal";
 import Home from "@/pages/Home";
 import Business from "@/pages/Business";
+import Router from 'next/router'
 
 
 type layoutprops = {
   children: ReactNode;
+  linkPath:string
 };
 
-const Layout = ({ children }: layoutprops) => {
-  const [Modalisshown, showmodal] = useState(false);
-  const [HeaderIsHidden, setshow] = useState(false)
-
-  const showmodalhandler = () => {
-    showmodal(true)
-  };
-  
-  const hidemodalhandler = () => {
-    showmodal(false)
-  }
-
-  const hideheaderhandler =() => {
-    setshow(false)
-  }
+const Layout = ({ children, linkPath }: layoutprops) => {
 
   return (
     <>
       <div className="">
 
-       {Modalisshown && <Modal  hide={hidemodalhandler} /> }
 
-       {HeaderIsHidden && <NavBar show={showmodalhandler}/>}
+       <NavBar linkPath={linkPath}/>
 
        {children}  
       
 
-       {HeaderIsHidden && <Footer/>}
+       <Footer/>
       </div>
     </>
   );
 };
 
 export default Layout;
+
+
+

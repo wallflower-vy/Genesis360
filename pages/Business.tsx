@@ -3,17 +3,19 @@ import EveryThing from '@/Components/Business/EveryThing'
 import Focus from '@/Components/Business/Focus'
 import HowItWorks from '@/Components/Business/HowItWorks'
 import Whatentrepreneur from '@/Components/Business/Whatentrepreneur'
+import Layout from '@/Components/Layout'
 import React from 'react'
 
 const Business = () => {
+  
   return (
-    <div>
+    <Layout>
       <BusinessHero  />
       <EveryThing />
       <HowItWorks />
       <Whatentrepreneur />
       <Focus />
-    </div>
+    </Layout>
   )
 }
 
