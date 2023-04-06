@@ -8,6 +8,10 @@ import type { AppProps } from "next/app";
 
 
 
+import Layout from '@/Components/Layout'
+import '@/styles/globals.css'
+import type { AppProps } from 'next/app'
+
 
 
 
