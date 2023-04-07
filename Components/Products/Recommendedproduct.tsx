@@ -1,9 +1,10 @@
 
 import Image from 'next/image'
-import React from 'react';
+import React, { useState } from 'react';
 import product1 from "../../public/assets/image 9.png";
 import { AiOutlineHeart } from 'react-icons/ai';
 import {MdKeyboardArrowDown} from 'react-icons/md'
+import ProductModal from '../UI/ProductModal';
 
 
 const productlist =[
@@ -34,17 +35,39 @@ const productlist =[
 
 ]
 
-const Recommendedproduct = () => {
+interface MyComponentProps {
+  onClick: (param: string) => void;
+}
+const Recommendedproduct = (props: MyComponentProps) => {
+  const handleClick = () => {
+    props.onClick('hello');
+  };
+
+
+  const [isProductOpen, setIsProductOpen] = useState([]);
+  // const displaycontent = (product:any)=>{
+  //   setIsProductOpen([product])
+  // }
+
+  const handleOpenProductModal = (param: string) => {
+    setIsProductOpen(true);
+  };
+
+  // const handleCloseModal = () => {
+  //   setIsProductOpen(false);
+  // };
   return (
     <div className='px-[8rem] bg-background'>
         <p className='text-green text-4xl font-bold'>Recommended Products</p>
 
 
         <div className='grid grid-cols-4 gap-4 mt-5'>
+      
         {productlist.map((item, index) => {
             return (
               <>
-              <div className='bg-white shadow-xl p-4 '>
+              
+              <div className='bg-white shadow-xl p-4 cursor-pointer ' onClick={()=>displaycontent(product)}>
                 <div className='bg-background'>
                     <Image src={item.productImage} alt='' />
                     <AiOutlineHeart className='relative top-[-17rem] left-4 text-2xl cursor-pointer'/>
@@ -56,6 +79,7 @@ const Recommendedproduct = () => {
 
 
             </div>
+          
               </>
             );
           })}
@@ -65,6 +89,7 @@ const Recommendedproduct = () => {
 
             
         </div>
+        {isProductOpen && <ProductModal />}
 
         <div className='flex justify-center mt-9 '>
             <button className='bg-lightgreen  w-[50%] p-3 font-bold text-xl text-white'>See More Product <MdKeyboardArrowDown  className='inline text-xl'/></button>

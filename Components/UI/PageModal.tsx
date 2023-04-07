@@ -1,7 +1,7 @@
-import Image from 'next/image';
+
 import React, { useState } from 'react';
 import {MdOutlineShareLocation} from 'react-icons/md'
-import location from '../../public/svg/Location.svg'
+
 
 
 // interface ModalProps {
