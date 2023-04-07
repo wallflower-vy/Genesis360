@@ -1,32 +1,38 @@
+import Product from "@/pages/ProductList";
 import Footer from "./Footer/Footer";
 import NavBar from "./Navbar/NavBar";
-
-import React, { ReactNode } from 'react'
-
-
+import { useState } from "react";
+import React, { ReactNode } from "react";
+import Modal from "./UI/Modal";
+import Home from "@/pages/Home";
+import Business from "@/pages/Business";
+import Router from 'next/router'
 
 
 type layoutprops = {
-  children: ReactNode
-}
+  children: ReactNode;
+  linkPath:string
+};
 
+const Layout = ({ children, linkPath }: layoutprops) => {
 
-
-
-
-const Layout = ({children}:layoutprops) => {
   return (
     <>
+      <div className="">
+
+
+       <NavBar linkPath={linkPath}/>
+
+       {children}  
       
-      <div className=''>
-        
-        <NavBar />
-       
-        {children}
-        <Footer />
+
+       <Footer/>
       </div>
     </>
   );
 };
 
 export default Layout;
+
+
+
