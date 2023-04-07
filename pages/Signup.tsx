@@ -6,7 +6,8 @@ const Signup = () => {
   return (
    <>
    <FormHeader text='Already have an account?' linkPath='/BusinessLogin' description='Log In'/>
-   <SignUp />
+    <SignUp />
    </>
   )
 }
+export default Signup

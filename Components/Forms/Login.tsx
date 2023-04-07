@@ -4,6 +4,7 @@ import hidePass from "../../public/svg/hidepassword.svg";
 import showPass from "../../public/svg/showpassword.svg";
 import sign from "../../public/assets/Vector (2).png"
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -106,7 +107,8 @@ function Login() {
           
             <div className=" mt-[15px] flex justify-between items-center">
               <p className=" text-green  font-medium leading-[20px] text-[20px]">Forget Password?</p>
-              <p className=" text-[#003DB5] text-[20px] font-bold">Reset</p>
+              <Link href='/resetpassword'className=" text-[#003DB5] text-[20px] cursor-pointer font-bold">Reset</Link>
+       
             </div>
 
             <button className="h-[50px] mt-[20px] bg-green w-full font-bold  text-white text-[20px]" onClick={handleclik2}>Login</button>

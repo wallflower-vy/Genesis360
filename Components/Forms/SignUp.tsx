@@ -32,15 +32,15 @@ const SignUp = () => {
   const toggleDropdownforcity = () =>
     setIsDropdownOpenforcity(!isDropdownOpenforcity);
 
-  const handleStateSelection = (state) => {
-    setSelectedState(state);
-    setIsDropdownOpen(false);
-  };
+  // const handleStateSelection = (state) => {
+  //   setSelectedState(state);
+  //   setIsDropdownOpen(false);
+  // };
 
-  const handleCitySelect = (city) => {
-    setSelectedCity(city);
-    setIsDropdownOpenforcity(false);
-  };
+  // const handleCitySelect = (city) => {
+  //   setSelectedCity(city);
+  //   setIsDropdownOpenforcity(false);
+  // };
 
   return (
     <>
@@ -159,8 +159,8 @@ const SignUp = () => {
 
               <div className="mt-[0px]">
                 <label htmlFor="Phone Number *" className="block text-[#183D36] text-[20px] font-bold leading-[25px] mb-2">Phone Number *</label>
-                <div class="flex">
-                  <label for="phone_number" class="border-[#183D36] border-y-2 border-l-2 h-[100%] bg-[#B0FFFC] p-2 outline-[#183D36] outline-8"> 
+                <div className="flex">
+                  <label  className="border-[#183D36] border-y-2 border-l-2 h-[100%] bg-[#B0FFFC] p-2 outline-[#183D36] outline-8"> 
                     +234
                   </label>
                   <input
@@ -170,7 +170,7 @@ const SignUp = () => {
                     placeholder="8122233345"
                     pattern=""
                     required
-                    class="w-full py-2 px-3  border-2 focus:outline-none focus:shadow-outline"
+                    className="w-full py-2 px-3  border-2 focus:outline-none focus:shadow-outline"
                   />
                 </div>
               </div>
@@ -232,7 +232,7 @@ const SignUp = () => {
                           <li
                             key={state}
                             className="py-2 px-3 hover:bg-gray-100 cursor-pointer"
-                            onClick={() => handleStateSelection(state)}
+                            // onClick={() => handleStateSelection(state)}
                           >
                             {state}
                           </li>
@@ -282,7 +282,7 @@ const SignUp = () => {
                           <li
                             key={city}
                             className="py-2 px-3 hover:bg-gray-100 cursor-pointer"
-                            onClick={() => handleCitySelect(city)}
+                            // onClick={() => handleCitySelect(city)}
                           >
                             {city}
                           </li>
