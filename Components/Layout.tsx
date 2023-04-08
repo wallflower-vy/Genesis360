@@ -6,33 +6,28 @@ import React, { ReactNode } from "react";
 import Modal from "./UI/Modal";
 import Home from "@/pages/Home";
 import Business from "@/pages/Business";
-import Router from 'next/router'
-
+import Router from "next/router";
+import Dashboard from "./Dashboard/Dashboard";
 
 type layoutprops = {
   children: ReactNode;
-  linkPath:string
+  linkPath: string;
 };
 
 const Layout = ({ children, linkPath }: layoutprops) => {
-
   return (
     <>
       <div className="">
+        {/* <NavBar linkPath={linkPath}/> */}
 
+        {/* {children}   */}
 
-       <NavBar linkPath={linkPath}/>
+        <Dashboard />
 
-       {children}  
-      
-
-       <Footer/>
+        {/* <Footer/> */}
       </div>
     </>
   );
 };
 
 export default Layout;
-
-
-

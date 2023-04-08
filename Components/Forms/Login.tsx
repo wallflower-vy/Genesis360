@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import hidePass from "../../public/svg/hidepassword.svg";
 import showPass from "../../public/svg/showpassword.svg";
-import sign from "../../public/assets/Vector (2).png"
+import sign from "../../public/assets/Vector (2).png";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -16,20 +16,16 @@ function Login() {
     setPasswordVisible((prevState) => !prevState);
   };
   const router = useRouter();
- 
+
   const handleClick = () => {
-  
-    router.push('/Signup');
-    
-    
+    router.push("/Signup");
   };
 
-  const handleclik2=()=>{
-    router.push('/ProductList');
-  }
+  const handleclik2 = () => {
+    router.push("/ProductList");
+  };
   return (
     <div className=" bg-background flex flex-col justify-center  py-[40px]  max-lg:pt-[190px]">
-
       <div className="mx-auto">
         <div className=" px-[70px] py-[50px]  bg-white  w-[600px]  max-md:w-[100%] max-md:px-0 max-lg:py-0 shadow-[0px_0px_10px_0px_#00000040]">
           <h2 className=" text-[40px] leading-[20px]  text-green font-bold">
@@ -41,9 +37,7 @@ function Login() {
 
           <form>
             <div className="">
-
               <div className="">
-
                 <label
                   htmlFor="Email Address"
                   className="block text-[#183D36]  mt-[20px] text-[20px] font-bold leading-[25px] mb-2"
@@ -64,7 +58,6 @@ function Login() {
               </div>
 
               <div className="">
-
                 <label
                   htmlFor="password"
                   className="block text-[#183D36] text-[20px] font-bold leading-[25px] mb-2 mt-[25px]"
@@ -73,7 +66,6 @@ function Login() {
                 </label>
 
                 <div className="relative">
-
                   <input
                     type={passwordVisible ? "text" : "password"}
                     id="password"
@@ -101,27 +93,41 @@ function Login() {
                     </button>
                   </div>
                 </div>
-                
               </div>
             </div>
-          
+
             <div className=" mt-[15px] flex justify-between items-center">
-              <p className=" text-green  font-medium leading-[20px] text-[20px]">Forget Password?</p>
-              <Link href='/resetpassword'className=" text-[#003DB5] text-[20px] cursor-pointer font-bold">Reset</Link>
-       
+              <p className=" text-green  font-medium leading-[20px] text-[20px]">
+                Forget Password?
+              </p>
+              <Link
+                href="/resetpassword"
+                className=" text-[#003DB5] text-[20px] cursor-pointer font-bold"
+              >
+                Reset
+              </Link>
             </div>
 
-            <button className="h-[50px] mt-[20px] bg-green w-full font-bold  text-white text-[20px]" onClick={handleclik2}>Login</button>
+            <button
+              className="h-[50px] mt-[20px] bg-green w-full font-bold  text-white text-[20px]"
+              onClick={handleclik2}
+            >
+              Login
+            </button>
           </form>
 
           <div className="flex mt-[90px] justify-center space-x-2">
-            <p className=" text-[20px] text-green font-medium">Don’t have an account?</p>
-            <p className=" text-lightgreen text-[20px] font-extrabold cursor-pointer" onClick={handleClick}>Sign Up
-            
-            <Image src={sign} alt="logo" className="max-md:w-[180px]" />
+            <p className=" text-[20px] text-green font-medium">
+              Don’t have an account?
+            </p>
+            <p
+              className=" text-lightgreen text-[20px] font-extrabold cursor-pointer"
+              onClick={handleClick}
+            >
+              Sign Up
+              <Image src={sign} alt="logo" className="max-md:w-[180px]" />
             </p>
           </div>
-          
         </div>
       </div>
     </div>
