@@ -5,7 +5,8 @@ import showPass from "../public/svg/show.svg";
 const Orders = () => {
   return (
     <>
-    <table className="w-full border-collapse bg-gray-100">
+    <h2 className="text-[32px] font-bold">Orders</h2>
+    <table className="w-full border-collapse bg-gray-100 mt-[30px]">
       <thead className="">
         <tr className="text-left border-2 text-[15px] font-semibold  border-[#DFE5FF]">
           <th className="p-2">Order ID</th>
