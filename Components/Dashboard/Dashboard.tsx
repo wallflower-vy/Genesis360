@@ -11,6 +11,7 @@ import { CiBank} from 'react-icons/ci';
 import DashboardPage from '@/pages/DashboardPage';
 import Orders from '@/pages/Orders';
 import Link from "next/link";
+import Wallet from '@/pages/Wallet';
 
 
 const Dashboard = () => {
@@ -18,9 +19,9 @@ const Dashboard = () => {
     <div>
       <ProductNav />
 
-      <div className='bg-background px-[8rem] py-[2rem] flex space-x-[60px]'>
+      <div className='bg-background px-[8rem] py-[2rem] flex space-x-[40px]'>
 
-        <div className='bg-white px-8 py-4 w-[25%] flex flex-col shadow-[0px_0px_5px_0px_#0000004D] text-[20px] leading-[25px] font-medium cursor '>
+        <div className='bg-white px-8 py-4 w-[25%] flex flex-col shadow-[0px_0px_5px_0px_#0000004D] text-[20px] leading-[25px] font-medium cursor-pointer text-green '>
           <p className='py-5 active:text-[#90DD3E] flex items-center gap-x-[9px]'><MdOutlineDashboard style={{fontSize: '30px'}} />Dashboard</p>
           <p className='py-5 active:text-[#90DD3E] flex items-center gap-x-[9px]'><GoFile  style={{fontSize: '30px'}} />Orders</p>
           <p className='py-5 active:text-[#90DD3E] flex items-center gap-x-[9px]'><MdOutlineAccountBalanceWallet style={{fontSize: '30px'}} />Wallet</p>
@@ -35,7 +36,8 @@ const Dashboard = () => {
 
         <div className='shadow-[0px_0px_5px_0px_#0000004D] bg-white w-[80%] py-8 px-8'>
           {/* <DashboardPage /> */}
-          <Orders />
+          {/* <Orders /> */}
+          <Wallet />
         </div>
       </div>
 
