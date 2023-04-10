@@ -13,6 +13,7 @@ import Orders from '@/pages/Orders';
 import Link from "next/link";
 import Wallet from '@/pages/Wallet';
 import Subscription from '@/pages/Subscription';
+import LoanRepayment from '@/pages/LoanRepayment';
 
 
 const Dashboard = () => {
@@ -39,7 +40,8 @@ const Dashboard = () => {
           {/* <DashboardPage /> */}
           {/* <Orders /> */}
           {/* <Wallet /> */}
-          <Subscription />
+          {/* <Subscription /> */}
+          <LoanRepayment />
         </div>
       </div>
 
