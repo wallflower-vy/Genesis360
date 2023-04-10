@@ -12,6 +12,7 @@ import DashboardPage from '@/pages/DashboardPage';
 import Orders from '@/pages/Orders';
 import Link from "next/link";
 import Wallet from '@/pages/Wallet';
+import Subscription from '@/pages/Subscription';
 
 
 const Dashboard = () => {
@@ -37,7 +38,8 @@ const Dashboard = () => {
         <div className='shadow-[0px_0px_5px_0px_#0000004D] bg-white w-[80%] py-8 px-8'>
           {/* <DashboardPage /> */}
           {/* <Orders /> */}
-          <Wallet />
+          {/* <Wallet /> */}
+          <Subscription />
         </div>
       </div>
 
