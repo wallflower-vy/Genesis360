@@ -5,6 +5,14 @@ import Image from "next/image";
 import appstore1 from "../../public/assets/image 7.png";
 import appstore2 from "../../public/assets/image 8.png";
 import { RiCloseCircleFill } from "react-icons/ri";
+import GetStarModal from "./GetStartedModal";
+import PageModal from "./PageModal";
+import TrustFundModal from "./TrustFundModal";
+import Requeststatementmodal from "./Requeststatementmodal";
+import SubscriptionConfirmationModal from "./SubscriptionConfirmationModal";
+import SubscriptionsuccesfulModal from "./SubscriptionsuccesfulModal";
+import ReferafriendModal from "./ReferafriendModal";
+import NewtransactionModal from "./NewtransactionModal";
 
 const Backdrop = (props:any) => {
   return <div className={classes.backdrop} onClick={props.hide} />;
@@ -13,27 +21,15 @@ const Backdrop = (props:any) => {
 const ModalOverlay = (props:any) => {
   return (
     <div className={classes.modal}>
-      <div>
-        <div className="flex justify-end">
-          <RiCloseCircleFill className="text-4xl cursor-pointer text-green" onClick={props.hide}/>
-        </div>
-
-        <h2 className=" text-green text-[55px] font-extrabold leading-[69px] max-md:text-[40px] max-md:leading-[50px]">
-          Shop for groceries now and pay later with our app!{" "}
-        </h2>
-
-        <p className=" text-green mt-4">
-          Install it today and enjoy the convenience of buying your favorite
-          groceries without having to pay the full amount upfront. Safe, easy,
-          and hassle-free.
-        </p>
-
-        <div className="flex gap-[12px] mt-[30px]">
-          <Image src={appstore1} alt="appstore" className="cursor-pointer" />
-          <Image src={appstore2} alt="googleplay" className="cursor-pointer" />
-        </div> 
-      </div>
-
+      {/* <GetStarModal /> */}
+      {/* <PageModal /> */}
+      {/* <TrustFundModal /> */}
+      {/* <Requeststatementmodal /> */}
+      {/* <SubscriptionConfirmationModal /> */}
+      {/* <SubscriptionsuccesfulModal /> */}
+      {/* <ReferafriendModal /> */}
+      <NewtransactionModal />
+      {/* <div className={classes.content}>{props.children}</div> */}
     </div>
   );
 };
