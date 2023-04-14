@@ -20,6 +20,7 @@ import Wallet from '@/pages/Wallet';
 import Subscription from '@/pages/Subscription';
 import Kyc from '@/pages/Kyc';
 import TrackMyPackage from '@/pages/TrackMyPackage';
+import LoanRepayment from '@/pages/LoanRepayment';
 
 // className='  p-2 text-xl font-semibold text-green '
 
@@ -43,7 +44,7 @@ const Dashboard = () => {
         case 'kyc':
         return <Kyc />;
         case 'loan':
-        return <Profile />;
+        return <LoanRepayment />;
       case 'profile':
         return <Profile />;
       case 'track':
