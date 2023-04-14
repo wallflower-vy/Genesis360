@@ -3,6 +3,7 @@ import logo from "../../public/assets/Genesislogo.png";
 import Image from "next/image";
 import businesspropic from "../../public/assets/businesspropic.png";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import Link from "next/link";
 
 const ProductNav = () => {
   return (
@@ -28,7 +29,7 @@ const ProductNav = () => {
             <Image src={businesspropic} alt="" />
           </div>
           <div>
-            <span className="text-green text-xl font-bold">Adewale</span>
+           <Link href='/BusinesDashboard'> <span className="text-green text-xl font-bold">Adewale</span></Link>
           </div>
         </div>
         <div className="flex gap-2 items-center">

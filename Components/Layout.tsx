@@ -18,13 +18,13 @@ const Layout = ({ children, linkPath }: layoutprops) => {
   return (
     <>
       <div className="">
-        {/* <NavBar linkPath={linkPath}/> */}
+        <NavBar linkPath={linkPath}/>
 
-        {/* {children}   */}
+        {children}  
 
-        <Dashboard />
+      
 
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </>
   );

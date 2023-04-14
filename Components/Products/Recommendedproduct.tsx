@@ -38,24 +38,15 @@ const productlist =[
 interface MyComponentProps {
   onClick: (param: string) => void;
 }
-const Recommendedproduct = (props: MyComponentProps) => {
-  const handleClick = () => {
-    props.onClick('hello');
-  };
+const Recommendedproduct = () => {
+  const [isProductOpen, setIsProductOpen] = useState(false);
+  
 
-
-  const [isProductOpen, setIsProductOpen] = useState([]);
-  // const displaycontent = (product:any)=>{
-  //   setIsProductOpen([product])
-  // }
-
-  const handleOpenProductModal = (param: string) => {
+  const handleOpenProductModal = () => {
     setIsProductOpen(true);
   };
-
-  // const handleCloseModal = () => {
-  //   setIsProductOpen(false);
-  // };
+   
+  
   return (
     <div className='px-[8rem] bg-background'>
         <p className='text-green text-4xl font-bold'>Recommended Products</p>
@@ -67,7 +58,7 @@ const Recommendedproduct = (props: MyComponentProps) => {
             return (
               <>
               
-              <div className='bg-white shadow-xl p-4 cursor-pointer ' onClick={()=>displaycontent(product)}>
+              <div className='bg-white shadow-xl p-4 cursor-pointer '  onClick={handleOpenProductModal}>
                 <div className='bg-background'>
                     <Image src={item.productImage} alt='' />
                     <AiOutlineHeart className='relative top-[-17rem] left-4 text-2xl cursor-pointer'/>

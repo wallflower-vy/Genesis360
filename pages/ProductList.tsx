@@ -9,6 +9,7 @@ import React, { useEffect, useState } from 'react'
 
 const ProductList = () => {
   const [showModal, setShowModal] = useState(false);
+  
   useEffect(() => { 
   //   if (showModal) {
   //   document.body.classList.add("overflow-hidden");
@@ -25,7 +26,7 @@ const ProductList = () => {
       {showModal && <PageModal />}
         <ProductLayout />
         <ProductListHero/>
-        <Recommendedproduct />
+       <Recommendedproduct  />
         <SubscriptionPackages />
         <Brands />
         <Footer />

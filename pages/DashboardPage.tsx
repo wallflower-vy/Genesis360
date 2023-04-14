@@ -38,7 +38,7 @@ const DashboardPage = () => {
             </div>
         </div>
 
-        <h2 className=' text-[24px] mt-[50px] w-[252px] text-[24px] font-bold leading-[30px]'>Current Loan Repayment Schedule</h2>
+        <h2 className=' mt-[50px] w-[252px] text-[24px] font-bold leading-[30px]'>Current Loan Repayment Schedule</h2>
 
         <div className=' mt-[15px] shadow-[0px_0px_2px_0px_#0000004D] px-4 py-6  w-[400px]'>
 
