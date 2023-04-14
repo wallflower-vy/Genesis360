@@ -41,7 +41,7 @@ const Dashboard = () => {
           {/* <Orders /> */}
           {/* <Wallet /> */}
           {/* <Subscription /> */}
-          <LoanRepayment />
+          {/* <LoanRepayment /> */}
         </div>
       </div>
 
