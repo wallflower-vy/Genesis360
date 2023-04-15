@@ -13,6 +13,11 @@ import SubscriptionConfirmationModal from "./SubscriptionConfirmationModal";
 import SubscriptionsuccesfulModal from "./SubscriptionsuccesfulModal";
 import ReferafriendModal from "./ReferafriendModal";
 import NewtransactionModal from "./NewtransactionModal";
+import Savedcard from "./Savedcard";
+import Loanrepaymentmodal from "./Loanrepaymentmodal";
+import RepaymentUnsuccessful from "./Repayment Unsuccessful";
+import Addressbook from "./Addressbook";
+import Addcard from "./Addcard";
 
 const Backdrop = (props:any) => {
   return <div className={classes.backdrop} onClick={props.hide} />;
@@ -25,10 +30,15 @@ const ModalOverlay = (props:any) => {
       {/* <PageModal /> */}
       {/* <TrustFundModal /> */}
       {/* <Requeststatementmodal /> */}
+      {/* <Loanrepaymentmodal /> */}
+      <RepaymentUnsuccessful />
+      {/* <Addressbook /> */}
+      {/* <Addcard /> */}
       {/* <SubscriptionConfirmationModal /> */}
       {/* <SubscriptionsuccesfulModal /> */}
       {/* <ReferafriendModal /> */}
-      <NewtransactionModal />
+      {/* <NewtransactionModal /> */}
+      {/* <Savedcard /> */}
       {/* <div className={classes.content}>{props.children}</div> */}
     </div>
   );

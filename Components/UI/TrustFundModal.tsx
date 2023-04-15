@@ -16,7 +16,7 @@ const TrustFundModal = () => {
   };
 
   return (
-    <div className="text-green w-[70%] mx-auto py-6 ">
+    <div className="text-green w-[90%] mx-auto py-6 ">
       <div className="flex justify-between">
         {" "}
         <h2 className="text-[32px]  text-[#90DD3E] leading-[40px] font-bold">
