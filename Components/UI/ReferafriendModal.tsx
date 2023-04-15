@@ -19,13 +19,13 @@ const ReferafriendModal = () => {
       </p>
 
       <div className="flex space-x-[8px]"> 
-        <button className="h-[50px] mt-[20px] bg-green w-[171px]  cursor-pointer font-bold  text-white text-[16px] bg-[#90DD3E]">Referral Link</button>
-        <button className="h-[50px] mt-[20px] bg-[#FFFFFF] cursor-pointer w-[100%] font-normal  text-green border-4 border-green text-[16px] bg-[#90DD3E]">genesis360.com.ng/toby</button>
+        <button className="h-[50px] mt-[20px]  w-[171px]  cursor-pointer font-bold  text-white text-[16px] bg-[#90DD3E]">Referral Link</button>
+        <button className="h-[50px] mt-[20px]  cursor-pointer w-[100%] font-normal  text-green border-4 border-green text-[16px] bg-[#90DD3E]">genesis360.com.ng/toby</button>
      </div>
 
      <div className="relative">
      <Image src={Sub} alt="googleplay" className="cursor-pointer"/>
-     <button className=" absolute  top-0 h-[50px] mt-[20px] bg-[#183D36] w-[133px]  cursor-pointer font-bold  left-[23rem] text-white text-[16px] bg-[#90DD3E]">Copy</button>
+     <button className=" absolute  top-0 h-[50px] mt-[20px] w-[133px]  cursor-pointer font-bold  left-[23rem] text-white text-[16px] bg-[#90DD3E]">Copy</button>
 
      </div>
       

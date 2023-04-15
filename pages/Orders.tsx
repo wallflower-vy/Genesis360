@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import showPass from "../public/svg/show.svg";
+import { TfiArrowCircleRight} from "react-icons/tfi";
+import { TfiArrowCircleLeft} from "react-icons/tfi";
+import { BsFilterRight} from "react-icons/bs";
 
 const Orders = () => {
   return (
@@ -60,7 +63,19 @@ const Orders = () => {
         </tr>
       </tbody>
     </table>
+ <div className="text-left   border-[#DFE5FF] justify-between flex mt-[375px]">
+        <div>
+            <p className="text-[20px] font-medium flex items-center"><BsFilterRight style={{fontSize: '30px'}} />By Oldest to Newest</p>
+        </div>
+        <div className="flex items-center space-x-[10px]">
+            <p className="text-[20px] font-semibold leading-[20px]">Page 1 of 2</p>
 
+            <div className="flex gap-x-[10px]">
+                <TfiArrowCircleLeft  style={{fontSize: '30px'}} />
+                <TfiArrowCircleRight  style={{fontSize: '30px'}}/>
+            </div>
+        </div>
+    </div>
     
     </>
   );

@@ -14,6 +14,9 @@ import Link from "next/link";
 import Wallet from '@/pages/Wallet';
 import Subscription from '@/pages/Subscription';
 import LoanRepayment from '@/pages/LoanRepayment';
+import Trackmypackage2 from '@/pages/Trackmypackage2';
+import Trackmypackage3 from '@/pages/Trackmypackage3';
+import Orders2 from '@/pages/Orders2';
 
 
 const Dashboard = () => {
@@ -42,6 +45,9 @@ const Dashboard = () => {
           {/* <Wallet /> */}
           {/* <Subscription /> */}
           {/* <LoanRepayment /> */}
+          {/* <Trackmypackage2 /> */}
+          {/* <Trackmypackage3 /> */}
+          <Orders2 />
         </div>
       </div>
 
