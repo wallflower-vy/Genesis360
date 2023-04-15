@@ -60,7 +60,7 @@ const NewtransactionModal = () => {
     </div>
 
 
-    <button className="h-[50px] mt-[50px] bg-green w-[100%] font-bold  text-white text-[20px] bg-[#90DD3E]">Close</button>
+    <button className="h-[50px] mt-[50px] w-[100%] font-bold  text-white text-[20px] bg-[#90DD3E]">Close</button>
 </div>   
 )}
 

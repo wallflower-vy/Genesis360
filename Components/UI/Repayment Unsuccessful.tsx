@@ -12,7 +12,7 @@ const RepaymentUnsuccessful = () => {
 
     <h2 className="text-[32px] leading-[40px] text-center font-semibold text-[#FF658C]">Repayment Successful</h2>
 
-    <p className="text-[20px] mt-[5px] leading-[26px] font-semibold text-center"> We're sorry, but your payment was not successful. Please check your payment information and try again. If you continue to experience issues, please contact our customer support team for assistance.</p>
+    <p className="text-[20px] mt-[5px] leading-[26px] font-semibold text-center"> We&apos;re sorry, but your payment was not successful. Please check your payment information and try again. If you continue to experience issues, please contact our customer support team for assistance.</p>
     <button className="h-[50px] mt-[15px] bg-white w-[100%] font-bold  text-green text-[20px]  border-2 border-green">Transaction Number: 123456789</button>
 
     <div className='flex justify-between mt-[18px]'>
@@ -32,7 +32,7 @@ const RepaymentUnsuccessful = () => {
 
 
 
-    <button className="h-[50px] mt-[20px] bg-green w-[100%] font-bold  text-white text-[20px] bg-[#90DD3E]">Close</button>
+    <button className="h-[50px] mt-[20px]  w-[100%] font-bold  text-white text-[20px] bg-[#90DD3E]">Close</button>
   </div>   
    )
 }

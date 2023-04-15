@@ -15,7 +15,7 @@ const Savedcard = () => {
      <Image src={Sub} alt="googleplay" className="cursor-pointer"/>
     </div>
 
-    <button className="h-[50px] mt-[40px] bg-green w-[95%] font-bold  text-white text-[20px] bg-[#90DD3E]">
+    <button className="h-[50px] mt-[40px]  w-[95%] font-bold  text-white text-[20px] bg-[#90DD3E]">
     Proceed to Pay        </button>
 </div>    )
 }

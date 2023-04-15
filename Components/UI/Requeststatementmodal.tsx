@@ -57,7 +57,7 @@ const Requeststatementmodal = () => {
         <span className="text-green  mt-[20px] pl-[4px] text-[20px] leading-[25px] font-medium">Send Statement to Email</span>
         </div>
       
-        <button className="h-[50px] mt-[10px] bg-green w-[100%] font-bold  text-white text-[20px] bg-[#90DD3E]">
+        <button className="h-[50px] mt-[10px]  w-[100%] font-bold  text-white text-[20px] bg-[#90DD3E]">
           Change Password
         </button>
       </form>

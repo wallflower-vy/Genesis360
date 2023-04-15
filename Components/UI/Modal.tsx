@@ -39,7 +39,7 @@ const ModalOverlay = (props:any) => {
       {/* <Checkexistingcollection /> */}
       {/* <Requeststatementmodal /> */}
       {/* <Loanrepaymentmodal /> */}
-      {/* <RepaymentUnsuccessful /> */}
+      <RepaymentUnsuccessful />
       {/* <Addressbook /> */}
       {/* <Addcard /> */}
       {/* <SubscriptionConfirmationModal /> */}
