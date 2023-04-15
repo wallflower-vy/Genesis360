@@ -18,6 +18,10 @@ import Loanrepaymentmodal from "./Loanrepaymentmodal";
 import RepaymentUnsuccessful from "./Repayment Unsuccessful";
 import Addressbook from "./Addressbook";
 import Addcard from "./Addcard";
+import FundWallet from "./FundWallet";
+import Checkexistingcollection from "./Checkexistingcollection";
+import Checknewsubscription from "./Checknewsubscription";
+import Statement from "./Statement";
 
 const Backdrop = (props:any) => {
   return <div className={classes.backdrop} onClick={props.hide} />;
@@ -25,13 +29,17 @@ const Backdrop = (props:any) => {
 
 const ModalOverlay = (props:any) => {
   return (
-    <div className={classes.modal}>
+    <div className={classes.modal} >
       {/* <GetStarModal /> */}
       {/* <PageModal /> */}
       {/* <TrustFundModal /> */}
+      {/* <FundWallet /> */}
+      {/* <Statement /> */}
+      {/* <Checknewsubscription /> */}
+      {/* <Checkexistingcollection /> */}
       {/* <Requeststatementmodal /> */}
       {/* <Loanrepaymentmodal /> */}
-      <RepaymentUnsuccessful />
+      {/* <RepaymentUnsuccessful /> */}
       {/* <Addressbook /> */}
       {/* <Addcard /> */}
       {/* <SubscriptionConfirmationModal /> */}
