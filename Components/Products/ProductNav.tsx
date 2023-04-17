@@ -37,7 +37,7 @@ const ProductNav = () => {
             <AiOutlineShoppingCart />
           </div>
           <div>
-            <span className="text-green text-xl font-bold">Cart</span>
+            <Link href='/businessCart'><span className="text-green text-xl font-bold">Cart</span></Link>
           </div>
         </div>
       </div>

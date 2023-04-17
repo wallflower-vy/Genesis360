@@ -1,11 +1,11 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {MdOutlineShareLocation} from 'react-icons/md'
-
+import React, { ReactNode } from "react";
 
 
 // interface ModalProps {
-//   onClose: () => void;
+//   children: ReactNode ;
 // }
 const PageModal = () => {
   const [selectedValue, setSelectedValue] = useState("");
@@ -29,6 +29,7 @@ const PageModal = () => {
             <div className="fixed inset-0 transition-opacity bg-gray-800 opacity-50"></div>
 
             <div className="z-20 w-full max-w-2xl py-16 px-6 mx-auto bg-white shadow-lg">
+              
               <div className="flex justify-center  flex-col items-center">
                 <h2 className="text-3xl text-lightgreen font-bold">
                   Choose Your Location
@@ -71,5 +72,7 @@ const PageModal = () => {
     </div>
   );
 };
+
+
 
 export default PageModal;

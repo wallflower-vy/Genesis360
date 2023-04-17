@@ -21,6 +21,7 @@ const Layout = ({ children, linkPath }: layoutprops) => {
         <NavBar linkPath={linkPath}/>
 
         {children}  
+       
 
       
 

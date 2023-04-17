@@ -15,8 +15,13 @@ import ReferafriendModal from "./ReferafriendModal";
 import NewtransactionModal from "./NewtransactionModal";
 
 const Backdrop = (props:any) => {
+  
   return <div className={classes.backdrop} onClick={props.hide} />;
+
+
 };
+
+
 
 const ModalOverlay = (props:any) => {
   return (

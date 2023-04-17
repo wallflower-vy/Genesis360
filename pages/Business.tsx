@@ -9,7 +9,7 @@ import React from 'react'
 const Business = () => {
   
   return (
-    <Layout>
+    <Layout linkPath='' >
       <BusinessHero  />
       <EveryThing />
       <HowItWorks />

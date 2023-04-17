@@ -1,10 +1,12 @@
 import React from 'react'
 import { RiCloseCircleFill } from "react-icons/ri";
+
 import Image from "next/image";
 import Sub from "../../public/assets/image 28.png"
 
 const NewtransactionModal = () => {
   return (
+    
     <div className="text-green w-[90%] py-6 pl-12  ">
         
     <div className="flex justify-between">
@@ -61,7 +63,8 @@ const NewtransactionModal = () => {
 
 
     <button className="h-[50px] mt-[50px] bg-green w-[100%] font-bold  text-white text-[20px] bg-[#90DD3E]">Close</button>
-</div>   
+    </div> 
+     
 )}
 
 export default NewtransactionModal

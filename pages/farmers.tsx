@@ -8,7 +8,7 @@ import React from 'react'
 
 const farmers = () => {
   return (
-    <Layout>
+    <Layout linkPath=''>
         <FarmerHero />
         <EverythingThrive />
         <Story />

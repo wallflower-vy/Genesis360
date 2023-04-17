@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import hidePass from "../../public/svg/hidepassword.svg";
 import showPass from "../../public/svg/showpassword.svg";
-import sign from "../../public/assets/Vector (2).png";
+import sign from "../../../public/assets/Vector (2).png";
 
 const SignUp = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
